@@ -9,7 +9,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-h1, h3, p, nav, #button {
+h1, h3, p, nav, li, #button {
     font-family: Roboto, sans-serif;
     font-weight: lighter;
 }
@@ -47,51 +47,54 @@ main {
     height: 100vh;
 }
 
-#about {
+#skills {
     text-align: right;
     padding-right: 20%;
 }
 
-#career {
+#code {
     display: flex;
     align-items: center;
 }
 
-.careerhead {
+.codehead {
     display: flex;
     align-items: center;
     transform: rotate(-90deg);
 }
 
-#career-text {
+#code-text {
     padding: 10px;
 }
 
-#paracareer {
-    line-height: 1.4;
+#code-list {
     padding-right: 5%;
+    line-height: 0;
 }
 
-#fun {
+#other {
     display: flex;
     align-items: center;
 }
 
-.funhead {
+.otherhead {
     transform: rotate(90deg);
     display: flex;
     align-items: center;
     height: 50px;
 }
 
-#fun-text {
+#other-text {
     padding: 10px;
 }
 
-#parafun {
-    text-align: right;
-    line-height: 1.4;
+#other-list {
     padding-left: 5%;
+    padding-right: 5%;
+}
+
+#other-list li {
+    text-align: right;
 }
 
 #button {
@@ -117,12 +120,11 @@ main {
         background-size: 50%;
     }
 
-    #career {
+    #code {
         padding-right: 60%;
     }
 
-    #fun {
+    #other {
         padding-left: 60%;
     }
-
 }
