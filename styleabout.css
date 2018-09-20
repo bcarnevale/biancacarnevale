@@ -5,7 +5,7 @@ body {
     background-size: cover;
 }
 
-h1, h3, p, nav, button {
+h1, h3, p, nav, #button {
     font-family: Roboto, sans-serif;
     font-weight: lighter;
 }
@@ -18,29 +18,74 @@ body {
 
 nav {
     grid-area: 1/2/2/3;
-    align-items: center;
 }
 
 main {
     grid-area: 2/1/3/4;
-    display: grid;
-    grid-template-rows: .5fr 1fr .5fr 2fr .5fr 2fr .5fr .5fr .5fr;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    height: 100vh;
 }
 
 #about {
-    grid-area: 2/4/3/5;
+    text-align: right;
+    padding-right: 20%;
+}
+
+#career {
+    display: flex;
+    align-items: center;
+}
+
+.careerhead {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    transform: rotate(-90deg);
+}
+
+#career-text {
+    padding: 10px;
+}
+
+#paracareer {
+    line-height: 1.4;
+    padding-right: 5%;
+}
+
+#fun {
+    display: flex;
+    align-items: center;
+}
+
+.funhead {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#fun-text {
+    padding: 10px;
+}
+
+#parafun {
+    text-align: right;
+    line-height: 1.4;
+    padding-left: 5%;
 }
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
 
 ul {
     list-style: none;
+}
+
+li {
+    padding: 20px;
 }
 
 ul a {
@@ -52,8 +97,35 @@ li a:hover {
     font-size: 120%;
 }
 
+#button {
+    background: #FFB192;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#button a {
+    text-decoration: none;
+    color: black;
+}
+
+#button a:hover {
+    font-size: 120%;
+}
+
 @media only screen and (min-width: 834px) {
     body {
         background-size: 50%;
     }
+
+    #career {
+        padding-right: 60%;
+    }
+
+    #fun {
+        padding-left: 60%;
+    }
+
 }
