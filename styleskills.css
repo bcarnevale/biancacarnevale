@@ -131,9 +131,7 @@ h3, p, nav, li, #button {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    border-bottom: 0.25px solid;
-    border-bottom-color: #FFB192;
-    background: white;
+    background: #FFB192;
     font-size: 18px;
 }
 
@@ -146,7 +144,7 @@ ul {
 }
 
 ul a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

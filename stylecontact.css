@@ -20,9 +20,7 @@ h1, nav, form {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    border-bottom: 0.25px solid;
-    border-bottom-color: #FFB192;
-    background: white;
+    background: #FFB192;
     font-size: 18px;
 }
 
@@ -35,7 +33,7 @@ li {
 }
 
 ul a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
