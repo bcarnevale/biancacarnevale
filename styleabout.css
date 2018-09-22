@@ -1,28 +1,29 @@
+@font-face {
+  font-family: text-me-one;
+  src: url(/assets/text_me_one/TextMeOne-Regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
     background: url("/images/backgroungbw.png") no-repeat left top fixed;
     background-size: cover;
-    display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 10fr;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-h1, h3, p, nav, #button {
+h3, p, nav {
     font-family: Roboto, sans-serif;
     font-weight: lighter;
 }
 
-nav {
-    grid-area: 1/2/2/3;
-}
-
-nav ul {
+#nav-bar {
     margin: 0;
-    padding: 20px;
     display: flex;
     justify-content: space-around;
+    border-bottom: 0.25px solid;
+    border-bottom-color: #FFB192;
+    background: white;
+    font-size: 18px;
 }
 
 ul {
@@ -42,15 +43,116 @@ li a:hover {
     font-size: 120%;
 }
 
-main {
-    grid-area: 2/1/3/4;
-    height: 100vh;
-}
-
 #about {
+    color: #FFB192;
+    font-family: text-me-one;
+    font-size: 70px;
+    font-weight: lighter;
     text-align: right;
     padding-right: 20%;
+    animation: text-flicker 3s linear infinite;
 }
+
+#offset {
+    animation: letter-flicker 2s linear infinite;
+  }
+  
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px orange;
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px orange;
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px orange;
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px orange;
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px orange;
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px orange;
+    }
+  }
+
+  @keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px orange;
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px orange;
+    }
+  }
 
 #career {
     display: flex;
@@ -92,24 +194,6 @@ main {
     text-align: right;
     line-height: 1.4;
     padding-left: 5%;
-}
-
-#button {
-    background: #FFB192;
-    font-family: Roboto, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    width: 150px;
-    margin: 0 auto;
-}
-
-#button a {
-    text-decoration: none;
-    color: black;
-}
-
-#button a:hover {
-    font-size: 120%;
 }
 
 @media only screen and (min-width: 834px) {

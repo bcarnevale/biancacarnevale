@@ -11,12 +11,39 @@ body {
     height: 100vh;
 }
 
-h3, p, nav, li, #button {
+h1, nav, form {
     font-family: Roboto, sans-serif;
     font-weight: lighter;
 }
 
-#skills {
+#nav-bar {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.25px solid;
+    border-bottom-color: #FFB192;
+    background: white;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-size: 120%;
+}
+
+#contact {
     color: #FFB192;
     font-family: text-me-one;
     font-size: 70px;
@@ -30,7 +57,7 @@ h3, p, nav, li, #button {
     animation: letter-flicker 2s linear infinite;
   }
   
-@keyframes text-flicker {
+  @keyframes text-flicker {
     0% {
       opacity:0.1;
       text-shadow: 0px 0px 29px orange;
@@ -127,82 +154,26 @@ h3, p, nav, li, #button {
     }
   }
 
-#nav-bar {
-    margin: 0;
+#form-field {
     display: flex;
-    justify-content: space-around;
-    border-bottom: 0.25px solid;
-    border-bottom-color: #FFB192;
-    background: white;
-    font-size: 18px;
+    justify-content: center;
 }
 
-ul {
-    list-style: none;
+#message-field {
+    min-height: 200px;
 }
 
-#nav-bar li {
-    padding: 20px;
+form input {
+    min-width: 250px;
+    border: none;
 }
 
-ul a {
-    color: black;
-    text-decoration: none;
-}
-
-li a:hover {
-    font-size: 120%;
-}
-
-#skills {
-    text-align: right;
-    padding-right: 20%;
-}
-
-#code {
-    display: flex;
-    align-items: center;
-}
-
-.codehead {
-    display: flex;
-    align-items: center;
-    transform: rotate(-90deg);
-}
-
-#code-text {
+#submit {
+    background: #FFB192;
+    border: none;
     padding: 10px;
-}
-
-#code-list {
-    padding-right: 5%;
-    line-height: 1.4;
-}
-
-#other {
-    display: flex;
-    align-items: center;
-}
-
-.otherhead {
-    transform: rotate(90deg);
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-#other-text {
-    padding: 10px;
-}
-
-#other-list {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#other-list li {
-    text-align: right;
-    line-height: 1.4;
+    font-size: 24px;
+    font-weight: lighter;
 }
 
 @media only screen and (min-width: 834px) {
@@ -210,11 +181,14 @@ li a:hover {
         background-size: 50%;
     }
 
-    #code {
-        padding-right: 60%;
+    #form-field {
+        justify-content: flex-end;
+        padding-right: 15%;
     }
 
-    #other {
-        padding-left: 60%;
+    form input {
+        border: 0.25px solid;
+        border-color: black;
     }
+
 }
