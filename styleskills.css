@@ -149,12 +149,7 @@ ul a {
 }
 
 li a:hover {
-    font-size: 120%;
-}
-
-#skills {
-    text-align: right;
-    padding-right: 20%;
+    border-bottom: 3px solid white;
 }
 
 #code {

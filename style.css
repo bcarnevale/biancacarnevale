@@ -37,9 +37,9 @@ ul a {
 }
 
 li a:hover {
-    font-size: 120%;
+    border-bottom: 3px solid white;
 }
-
+  
 #biancalogo {
     grid-area: 2/3/span 1/span 1; 
 }
@@ -80,6 +80,7 @@ span {
     }
 }
 
+/* Junior Developer Glitch */
 .glitch {
     color: black;
     font-family: Roboto, sans-serif;
