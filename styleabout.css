@@ -1,12 +1,12 @@
 @font-face {
   font-family: text-me-one;
-  src: url(/assets/text_me_one/TextMeOne-Regular.ttf);
+  src: url(assets/text_me_one/TextMeOne-Regular.ttf);
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: url("/images/backgroungbw.png") no-repeat left top fixed;
+    background: url("images/backgroungbw.png") no-repeat left top fixed;
     background-size: cover;
     height: 100vh;
 }
